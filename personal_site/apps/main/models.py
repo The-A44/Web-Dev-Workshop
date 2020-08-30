@@ -1,3 +1,4 @@
 from django.db import models
 
-# Create your models here.
+class IPRipper(models.Model):
+	ip = models.CharField(max_length=45)

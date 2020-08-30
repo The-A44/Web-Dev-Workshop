@@ -3,5 +3,28 @@
 {% load static %}
 
 {% block main %}
-    <p>Hello world! You are on the about page.</p>
+<divc>
+    <h3>Gimme your ip.</h3>
+    <p><em>I won't do <superbold><u>anything</u></superbold> with it don't worry ;)</em></p>
+
+    <br />
+
+    <form>
+
+        {% csrf_token %}
+        {{ form }}
+
+        <!--
+        <label>IP:</label>
+        <input type="text" name="ripper" />
+        -->
+        <input type="submit" name="Save" />
+    </form>
+    
+    <div>
+        <hr />
+        <a href="{% url 'main:index' %}">Go back to the home page</a>
+    </div>
+    
+</divc>
 {% endblock %}

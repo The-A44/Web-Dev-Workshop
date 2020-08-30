@@ -3,15 +3,73 @@
 {% load static %}
 
 {% block head %}
-    <!-- You can add CSS & Javascript here like you would in <head></head> tags. -->
+<!-- You can add CSS & Javascript here like you would in <head></head> tags. -->
 {% endblock %}
 
 {% block main %}
-    <!-- This is like the <body></body> or <main></main> section. -->
-    <p>Hello World!</p>
-    <p>I can add images from my static/img folder like this:</p>
-    <img style="width:60%;" src="{% static 'img/sample.jpeg' %}" />
-    <br>
-    <p>I can link to other pages within my site like this:</p>
-    <a href="{% url 'main:about' %}">Click me!</a>
+<!-- This is like the <body></body> or <main></main> section. -->
+<h1>
+    Let's go
+</h1>
+<h6>
+    Let's go moment
+</h6>
+<p>
+    The quick brown fox jumps over the lazy dog <u>eee</u>
+    <hr />
+    <b>ooooh</b>
+    <br />
+    <i>I see</i>
+    <br />
+    <strong>thicc</strong>
+    <hr />
+    Bruh, look at this dude
+    <br />
+    <br />
+    <img src="{% static 'img/img.png' %}" alt="thisdoodstupid" width="437" height="498" />
+    <br />
+    <br />
+
+    Family Members:
+    <ul>
+        <li>Dad</li>
+        <li>Mom</li>
+        <li>Sister #1</li>
+        <li>Sister #2</li>
+    </ul>
+
+    <br />
+
+    Teachers and Grades:
+    <br />
+    <table border="1">
+        <tr>
+            <th>Teacher</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Dude1</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Dude2</td>
+            <td>A</td>
+        </tr>
+    </table>
+
+    <br />
+
+    <br />
+    Hobbies be like:
+    <dl>
+        <dt>Sleemp</dt>
+        <dd>- yes</dd>
+        <dt>Mumsic creation</dt>
+        <dd>- I can do it and me likey</dd>
+    </dl>
+
+    <br />
+
+    <a href="{% url 'main:about' %}">Pls click this for fun times and to contact meeee</a>
+</p>
 {% endblock %}
